@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Source Sans Pro', sans-serif;
+  ;
+  font-weight: 300;
+  height: 100vh;
+  background:linear-gradient(to left, rgb(62 17 96), rgb(3 3 40));
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+::-webkit-scrollbar {
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background:rgb(94, 80, 105);
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to right,
+      hsl(289, 29%, 30%),
+      hsl(272, 47%, 24%),
+      hsl(308, 35%, 26%));
+  border-radius: 20px;
+  min-width: 150px;
+  transition: .3s ease-in-out;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(272, 41%, 53%);
+}
+
+@supports (scrollbar-color: red blue){
+  * {
+    scrollbar-color: hsl(272, 41%, 53%) hsl(291, 15%, 24%);
+    scrollbar-width: auto;
+  }
+}
+
+@media screen and (max-width: 648px) {
+  ::-webkit-scrollbar {
+    height: 20px;
+  }
+  
+  body {
+    background: linear-gradient(to left,
+    hsl(272, 88%, 30%),
+    hsl(309, 79%, 25%));
+  }
+}

@@ -1,0 +1,111 @@
+.flex-header {
+    display: flex;
+    background: linear-gradient(to right, transparent, rgb(62 17 96), transparent);
+    font-family: 'Source Sans Pro', sans-serif;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    font-size: 1.3rem;
+    position: sticky;
+    top: -1px;
+    z-index: 9500;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.link li {
+    transition: .3s ease-in-out;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 300;
+    border: 1px solid transparent;
+}
+
+.flex-header h1 {
+    border-radius: 100px;
+    border-right: 2px solid hsla(0, 0%, 93%, 1);
+    font-weight: 900;
+}
+
+.flex-item {
+    flex-grow: 1;
+}
+
+.flex-item:nth-child(1) {
+    color: hsla(0, 0%, 93%, 1);
+    letter-spacing: 2px;
+    margin-left: 10px;
+}
+
+.flex-item:nth-child(3) {
+    text-decoration: none;
+    list-style: none;
+    flex-basis: 50%;
+    font-weight: 600;
+}
+
+.btn-menu {
+    display: none;
+}
+
+.nav-menu {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 10px;
+    justify-content: end;
+    font-size: 1.4rem;
+    margin-right: 2rem;
+    color: hsla(0, 0%, 93%, 1);
+}
+
+@media screen and (max-width: 648px) {
+
+    .flex-header {
+        background: linear-gradient(to left,
+                hsl(272, 88%, 30%),
+                hsl(309, 79%, 25%));
+    }
+
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 200px;
+        position: absolute;
+        justify-content: center;
+        top: 50px;
+        left: -100%;
+        opacity: 1;
+        transition: all .3s ease-in-out;
+        background: linear-gradient(to left,
+                hsl(272, 88%, 30%),
+                hsl(309, 79%, 25%));
+    }
+
+    .nav-menu.active {
+        left: 0;
+        opacity: 1;
+        z-index: 1100;
+        transition: all .3s ease-in-out;
+        justify-content: center;
+    }
+
+    .link li {
+        font-size: 1.6rem;
+        text-align: center;
+        width: 100%;
+        display: table;
+    }
+
+    .btn-menu {
+        display: block;
+        position: absolute;
+        right: 0;
+        color: white;
+        margin-right: 1em;
+    }
+}

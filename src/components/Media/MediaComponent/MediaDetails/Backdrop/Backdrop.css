@@ -1,0 +1,32 @@
+.review-container {
+    border-radius: 20px;
+    border-bottom: 2px solid grey;
+    border-left: 2px solid grey;
+    margin: 20px 0px;
+    height: 80px;
+    overflow: scroll;
+    overflow-x: hidden;
+    padding: 0px 20px;
+}
+
+.review-container h1 {
+    font-size: 1rem;
+}
+
+.review-container h2 {
+    font-size: 0.9rem;
+}
+
+.review-container p{
+    font-size: 1.1rem;
+}
+
+@media screen and (max-width: 648px) {
+    .review-container p{
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+    .review-container {
+        height: 130px;
+    }
+}

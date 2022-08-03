@@ -1,0 +1,40 @@
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+}
+
+.card img {
+    height: auto;
+    width: 80%;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    transition: .3s ease-in-out;
+}
+
+.card h1 {
+    font-size: 1.2rem;
+    height: 50px;
+    font-weight: 200;
+}
+
+.card img:hover {
+    border: 1px solid white;
+}
+
+.fa-star {
+    color: hsl(54, 74%, 49%);
+}
+
+@media screen and (max-width: 648px) {
+    .card {
+        justify-content: center;
+        align-content: center;
+    }
+    .card img {
+        width: 100%;
+    }
+}

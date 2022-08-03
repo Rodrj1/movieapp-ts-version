@@ -1,0 +1,28 @@
+.separator-to-bottom, .separator-to-header {
+    background: linear-gradient(to left, 
+    rgb(62 17 96), 
+    rgb(3 3 40));
+}
+
+.separator-to-bottom, .separator-to-top {
+    height: 100px;
+}
+
+.separator-to-top {
+    background: linear-gradient(to left, 
+    rgb(62 17 96), 
+    rgb(3 3 40));
+}
+
+.separator-to-header {
+    height: 50px;
+}
+
+@media screen and (max-width: 648px) { 
+    .separator-to-bottom, .separator-to-header, .separator-to-top {
+        background: linear-gradient(to left,
+                hsl(272, 88%, 30%),
+                hsl(309, 79%, 25%));
+    }
+    
+}

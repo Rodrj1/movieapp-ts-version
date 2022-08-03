@@ -1,0 +1,26 @@
+.cast-card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    min-height: 250px;
+    width: 250px;
+    text-align: center;
+    background-color: transparent;
+    margin: 20px;
+}
+
+.cast-card img {
+    width: 150px;
+    height: 200px;
+}
+
+.cast-card h1 {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.cast-card p {
+    font-size: 1.1rem;
+    font-weight: 300;
+}

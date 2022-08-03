@@ -1,0 +1,34 @@
+.list-maker {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    height: auto;
+    padding: 20px;
+    margin: auto;
+    color: white;
+    justify-content: center;
+    background: transparent;
+}
+
+.list-maker input, .list-maker textarea {
+    width: 90%;
+    margin: 20px 0px;
+    border-radius: 20px;
+    padding: 5px;
+    font-size: 1rem;
+}
+
+.list-maker input {
+    height: 40px;
+}
+
+.list-maker textarea {
+    height: 60px;
+}
+
+@media screen and (max-width: 648px) {
+    .list-maker {
+        width: 100%;
+        padding: 0px;
+    }
+}
